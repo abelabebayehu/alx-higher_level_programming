@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-print("C is fun!")
+#!/bin/bash
+python3 "$PYFILE"
