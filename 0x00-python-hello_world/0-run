@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-test_list = ["ALX", "teaching me", "how to use python"]
-print(test_list)
+print("ALX teaching me how to use python")
