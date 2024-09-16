@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("Best School")
+test_list = ["ALX", "teaching me", "how to use python"]
+print(test_list)
