@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for i in range (122, 64, -1):
-  if 123 > i > 96:
+for i in range (122, 96, -1):
     if i % 2 != 0:
-      print(chr(i-32), end="")
+      j = i -32
     elif i % 2 == 0:
-      print(chr(i), end="")
+      j = i
+    print(chr(j), end="")
