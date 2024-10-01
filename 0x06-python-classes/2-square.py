@@ -3,9 +3,10 @@
 Square Class
 
 This module defines a Square class that represents a square shape.
-It allows the creation of square objects with a specified size, 
+It allows the creation of square objects with a specified size,
 with validation to ensure the size is a non-negative integer.
 """
+
 
 class Square:
     """
@@ -16,7 +17,7 @@ class Square:
     raises exceptions for invalid size inputs.
 
     Attributes:
-        __size (int): The size of the square, which must be a 
+        __size (int): The size of the square, which must be a
                       non-negative integer.
     """
 
