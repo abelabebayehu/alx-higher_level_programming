@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Square Class
-This class is only for demonstration
-"""
+"""Square Class defined"""
 
 
 class Square:
+    """rep... of a square class """
     pass
