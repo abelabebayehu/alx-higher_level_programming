@@ -1,42 +1,38 @@
 #!/usr/bin/python3
-"""
-Square Class
-
-This module defines a Square class that represents a square shape.
-It allows the creation of square objects with a specified size,
-with validation to ensure the size is a non-negative integer.
-"""
-
-
 class Square:
-    """
-    A class that represents a square.
-
-    This class allows the creation of square objects by defining
-    their size, which must be a non-negative integer. The class
-    raises exceptions for invalid size inputs.
-
-    Attributes:
-        __size (int): The size of the square, which must be a
-                      non-negative integer.
+    """Square Class
     """
 
-    def __init__(self, size=0):
-        """
-        Initialize a Square instance.
+    def __init__(self, size=0, position=(0, 0)):
+        """__init__
 
         The __init__ method initializes the size value of the square.
 
-        Args:
-            size (int, optional): The size of the square. Defaults to 0.
+        Attributes:
+            size (:obj:`int`, optional): The size of the square.
 
         Raises:
-            TypeError: If `size` is not of type `int`.
+            TypeError: If `size` type is not `int`.
+
             ValueError: If `size` is less than `0`.
 
         """
-        self.__size = size
-        """gets the private attribute size"""
+
+        if type(size) is not int:
+            raise TypeError('size must be an integer')
+
+        if size < 0:
+            raise ValueError('size must be >= 0')
+
+        if self.__check_tuple(position) is False \
+           or self.__check_indexes(position) is False \
+           or self.__check_integers(position) is False \
+           or self.__check_values(position) is False:
+            raise TypeError('position must be a tuple of 2 positive integers')
+
+        self.size = size
+        self.position = position
+
     @property
     def size(self):
         return self.__size
