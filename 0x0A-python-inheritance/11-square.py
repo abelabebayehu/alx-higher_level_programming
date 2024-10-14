@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """a Rectangle subclass Square."""
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
@@ -19,9 +20,6 @@ class Square(Rectangle):
 
     def __str__(self):
            """
-        Returns the string representation of the Square instance.
-        
-        Returns:
-            str: A string in the format '[Square] <size>/<size>'
+           Returns the string representation of the Square instance.
         """
         return '[Square] ' + str(self.__size) + '/' + str(self.__size)
