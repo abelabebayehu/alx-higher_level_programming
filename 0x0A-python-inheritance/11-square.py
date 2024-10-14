@@ -5,12 +5,23 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    """ Represents a square, which is a special kind of rectangle."""
     def __init__(self, size):
-        """defines"""
+           """
+        Initializes a new Square instance.
+        
+        Args:
+            size (int): The size of the square's sides.
+        """
         self.integer_validator(size, size)
         super().__init__(size, size)
         self.__size = size
 
     def __str__(self):
-        """defines"""
+           """
+        Returns the string representation of the Square instance.
+        
+        Returns:
+            str: A string in the format '[Square] <size>/<size>'
+        """
         return '[Square] ' + str(self.__size) + '/' + str(self.__size)
