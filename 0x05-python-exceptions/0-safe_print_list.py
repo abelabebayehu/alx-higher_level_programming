@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    try: 
+    try:
         return my_list[:x]
     except IndexError:
-        return my_list[:-1]
-    
+        if x > 0:
+            return my_list[:-1]
